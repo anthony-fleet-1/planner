@@ -4,7 +4,7 @@ function setEndTime(startTime, duration) {
 }
 
 function lockStartTime(){
-
+    pass
 }
 
 function currentDate(){
@@ -33,8 +33,6 @@ function addRow(n){
     cell3.innerHTML = '<input type="text" id="endTime" name="endTime" placeholder="End Time">';
     cell4.innerHTML = '<input type="text" id="duration" name="duration" placeholder="Duration"> ';
 }
-
-
 
 // function deleteRow(n){
 //     // var tr = n.parentNode.parentNode.cloneNode(true);   
