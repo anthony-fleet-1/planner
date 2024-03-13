@@ -9,34 +9,37 @@
         <div>
             <h2 class=text-center id="date">Todays Date</p>
         </div>
-        <table class="table table-striped" id="table">
-            <thead>
-                <th>Task</th>
-                <th>Start Time</th>
-                <th>Duration</th>
-                <th>End Time</th>
-                <th></th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="text" id="task" name="task" placeholder="Your task..">
-                    </td>
-                    <td>
-                        <input type="text" id="startTime" name="startTime" placeholder="Start time">   
-                    </td>
-                    <td>
-                        <input type="text" id="endTime" name="endTime" placeholder="End Time">   
-                    </td>
-                    <td>
-                        <input type="text" id="duration" name="duration" placeholder="Duration">   
-                    </td>
-                    <td>
-                        <input type="button" name="newRow" value="+" onclick="addRow(this);">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <form>
+            <table class="table table-striped" id="table">
+                <thead>
+                    <th>Task</th>
+                    <th>Start Time</th>
+                    <th>Duration</th>
+                    <th>End Time</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" id="task" name="task" placeholder="Your task..">
+                        </td>
+                        <td>
+                            <input type="time" id="startTime" name="startTime" value="09:00">   
+                        </td>
+                        <td>
+                            <input type="time" id="duration" name="duration" value="00:00">   
+                        </td>
+                        <td>
+                            <input type="time" id="endTime" name="endTime" value="00:00" readonly class="background-grey">   
+                        </td>
+                        <td>
+                            <input type="button" name="newRow" value="+" onclick="addRow(this);">   
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" action="#">
+        </form>
     </body>
 </html>
 <script src="script.js"></script>
